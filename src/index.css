@@ -67,5 +67,3 @@ body {
 .gradient-bg {
   @apply bg-gradient-to-r from-saas-primary to-saas-secondary;
 }
-
-<lov-add-dependency>next-themes@latest</lov-add-dependency>
