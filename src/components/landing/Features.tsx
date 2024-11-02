@@ -25,11 +25,11 @@ const features = [
 
 const Features = () => {
   return (
-    <section id="features" className="py-24 bg-gray-50">
+    <section id="features" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <h2 className="text-4xl font-bold gradient-text">Features</h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-muted-foreground">
             Everything you need to succeed in one powerful platform
           </p>
         </div>
@@ -38,12 +38,12 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
+              className="relative group bg-card p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <div className="gradient-bg absolute inset-0 opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity" />
               <div className="text-saas-primary mb-5">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+              <h3 className="text-xl font-semibold mb-3 text-foreground">{feature.title}</h3>
+              <p className="text-muted-foreground">{feature.description}</p>
             </div>
           ))}
         </div>
